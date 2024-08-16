@@ -102,6 +102,10 @@ body {
     max-width: 500px;
     margin: 30px auto;
 }
+.card-custom-bg {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro pero no completamente negro */
+    border: 1px solid #343a40; /* Borde oscuro para hacer contraste */
+}
 
 .countdown h1 {
     font-size: 24px;
