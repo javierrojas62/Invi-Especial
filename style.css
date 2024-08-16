@@ -1,9 +1,12 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #1a1a1a, #333333); /* Degradado oscuro */    margin: 10px;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
+    /* Degradado oscuro */
+    margin: 10px;
     padding: 0;
     text-align: center;
-    color: #ffffff; /* Texto en color blanco */
+    color: #ffffff;
+    /* Texto en color blanco */
 }
 
 .google-logo {
@@ -24,6 +27,27 @@ body {
 .google-logo span:nth-child(4) {
     color: #34A853;
 }
+
+@keyframes neonGlow {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff, 0 0 60px #ff00ff, 0 0 70px #ff00ff;
+    }
+}
+
+.neon-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
 
 .search-bar {
     max-width: 500px;
@@ -159,49 +183,85 @@ body {
 .links-container {
     margin-top: 20px;
 }
+
 .links-container p {
     display: inline-block;
     margin: 0 5px;
     font-size: 16px;
 }
+
 .links-container a {
     text-decoration: none;
     color: #4285F4;
     font-weight: bold;
 }
+
 .links-container a:hover {
     text-decoration: underline;
 }
+
 .active-link {
-    color: #4285F4; /* Color para el enlace activo */
-    border-bottom: 2px solid #4285F4; /* Línea debajo del enlace activo */
+    color: #4285F4;
+    /* Color para el enlace activo */
+    border-bottom: 2px solid #4285F4;
+    /* Línea debajo del enlace activo */
 }
+
 .body-ubi {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     padding: 0;
     text-align: center;
-    background-image: url('./multimedia/Party.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
+    background-image: url('./multimedia/Party.jpg');
+    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Hace que la imagen se mantenga fija mientras se hace scroll */
 }
+
 .body-dat {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
     padding: 0;
     text-align: center;
-    background-image: url('./multimedia/fondo1.jpg'); /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
-    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-attachment: fixed; /* Hace que la imagen se mantenga fija mientras se hace scroll */
+    background-image: url('./multimedia/fondo1.jpg');
+    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Hace que la imagen se mantenga fija mientras se hace scroll */
+}
+
+.body-tema {
+    font-family: 'Roboto', sans-serif;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    background-image: url('./multimedia/tematica.jpg');
+    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
+    background-size: cover;
+    /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    /* Hace que la imagen se mantenga fija mientras se hace scroll */
 }
 
 /* Solo aplicar en pantallas pequeñas */
 @media (max-width: 767.98px) {
     .body-ubi {
-        background-size: cover; /* Asegura que la imagen cubra toda la pantalla en móviles */
+        background-size: cover;
+        /* Asegura que la imagen cubra toda la pantalla en móviles */
     }
 }
