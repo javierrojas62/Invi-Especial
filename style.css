@@ -95,7 +95,7 @@ body {
 /* Estilos adicionales para el contador */
 .countdown {
     text-align: center;
-    background: #fff;
+    background: linear-gradient(135deg, #1a1a1a, #333333);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
