@@ -40,6 +40,19 @@ body {
     }
 }
 
+@keyframes neonGlow2 {
+
+    0%,
+    100% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #4400ff, 0 0 20px #4400ff, 0 0 30px #4400ff, 0 0 40px #4400ff, 0 0 50px #4400ff, 0 0 60px #4400ff;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #4400ff, 0 0 30px #4400ff, 0 0 40px #4400ff, 0 0 50px #4400ff, 0 0 60px #4400ff, 0 0 70px #4400ff;
+    }
+}
+
+
 .neon-text {
     font-family: 'Roboto', sans-serif;
     font-size: 36px;
@@ -47,7 +60,13 @@ body {
     text-align: center;
     animation: neonGlow 1.5s infinite alternate;
 }
-
+.neon-text2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    animation: neonGlow2 1.5s infinite alternate;
+}
 
 .search-bar {
     max-width: 500px;
