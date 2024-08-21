@@ -40,63 +40,72 @@
                 <span class="visually-hidden">Loading...</span>
             </div>
             <div class="card-body card-custom-bg">
-                <p class="card-text m-auto text-center neon-text">Revivi los mejores momentos del antes y del después.</p>
+                <p class="card-text m-auto text-center neon-text">Revivi los mejores momentos del antes y del después.
+                </p>
                 <p style="font-size: 4vh;">🥳🎉🎆🎇🪩🪅👯‍♀️</p>
                 <a href="./index.html" class="btn btn-primary ">después del 2/9/24</a>
             </div>
         </div>
-        <!-- card cargando -->
-        <div class="card card-custom-bg" aria-hidden="true">
-            <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                </h5>
-                <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                </p>
-                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+        <!-- Contenedor de videos -->
+        <div class="container mt-4">
+            <div class="row">
+                <!-- Video 1 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="./multimedia/marcos.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="./multimedia/maca.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="ratio ratio-16x9">
+                        <video controls>
+                            <source src="./multimedia/paula..mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de videos.
+                        </video>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="card card-custom-bg" aria-hidden="true">
-            <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                </h5>
-                <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                </p>
-                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+        <!-- WhatsApp Button -->
+        <div class="whatsapp-float">
+            <i class="fab fa-whatsapp"></i>
+            <div class="whatsapp-menu">
+                <p>Confirmar</p>
+                <a href="https://wa.me/5492645153162?text=Te%20confirmo%20que%20asisto" target="_blank"
+                    class="btn btn-success btn-sm"> <i class="fab fa-whatsapp"></i> Maca</a>
+                <a href="https://wa.me/5492646282726?text=Te%20confirmo%20que%20asisto" target="_blank"
+                    class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i> Marcos</a>
+                <a href="https://wa.me/5492646282009?text=Te%20confirmo%20que%20asisto" target="_blank"
+                    class="btn btn-success btn-sm"><i class="fab fa-whatsapp"></i> Paula</a>
             </div>
         </div>
-        <div class="card card-custom-bg" aria-hidden="true">
-            <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                    <span class="placeholder col-6"></span>
-                </h5>
-                <p class="card-text placeholder-glow">
-                    <span class="placeholder col-7"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-4"></span>
-                    <span class="placeholder col-6"></span>
-                    <span class="placeholder col-8"></span>
-                </p>
-                <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
-            </div>
-        </div>
+
     </main>
     <footer>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        document.querySelector('.whatsapp-float').addEventListener('click', function () {
+            var menu = document.querySelector('.whatsapp-menu');
+            menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+        });
+    </script>
 </body>
 
 </html>

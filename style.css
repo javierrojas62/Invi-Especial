@@ -92,7 +92,6 @@ body {
 }
 
 /* datos */
-/* Estilos adicionales para el contador */
 .countdown {
     text-align: center;
     background: linear-gradient(135deg, #1a1a1a, #333333);
@@ -102,9 +101,10 @@ body {
     max-width: 500px;
     margin: 30px auto;
 }
+
 .card-custom-bg {
-    background-color: rgba(0, 0, 0, 0.8); /* Fondo oscuro pero no completamente negro */
-    border: 1px solid #343a40; /* Borde oscuro para hacer contraste */
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1px solid #343a40;
 }
 
 .countdown h1 {
@@ -164,11 +164,9 @@ body {
     text-decoration: none;
 }
 
-/* Estilo personalizado para el iframe del mapa */
 .map-container {
     position: relative;
     padding-bottom: 56.25%;
-    /* Proporción 16:9 */
     height: 0;
     overflow: hidden;
     max-width: 100%;
@@ -206,26 +204,30 @@ body {
 
 .active-link {
     color: #4285F4;
-    /* Color para el enlace activo */
     border-bottom: 2px solid #4285F4;
-    /* Línea debajo del enlace activo */
 }
 
-.body-ubi {
+.body-ubi, .body-tema {
     font-family: 'Roboto', sans-serif;
-    margin: 10px;
     padding: 0;
     text-align: center;
+}
+
+.body-ubi::before,
+.body-tema::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background-image: url('./multimedia/Party.jpg');
-    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
     background-size: cover;
-    /* Asegura que la imagen cubra toda la pantalla */
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     background-attachment: fixed;
-    /* Hace que la imagen se mantenga fija mientras se hace scroll */
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .body-dat {
@@ -234,38 +236,63 @@ body {
     padding: 0;
     text-align: center;
     background-image: url('./multimedia/fondo1.jpg');
-    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
     background-size: cover;
-    /* Asegura que la imagen cubra toda la pantalla */
     background-position: center;
-    /* Centra la imagen */
     background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
     background-attachment: fixed;
-    /* Hace que la imagen se mantenga fija mientras se hace scroll */
 }
 
-.body-tema {
-    font-family: 'Roboto', sans-serif;
-    margin: 10px;
-    padding: 0;
-    text-align: center;
-    background-image: url('./multimedia/tematica.jpg');
-    /* Reemplaza 'tu-imagen.jpg' con la ruta de tu imagen */
-    background-size: cover;
-    /* Asegura que la imagen cubra toda la pantalla */
-    background-position: center;
-    /* Centra la imagen */
-    background-repeat: no-repeat;
-    /* Evita que la imagen se repita */
-    background-attachment: fixed;
-    /* Hace que la imagen se mantenga fija mientras se hace scroll */
+/* boton de confirmacion */
+/* Estilos para el botón de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    z-index: 1000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
-/* Solo aplicar en pantallas pequeñas */
+.whatsapp-float .whatsapp-menu {
+    display: none;
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: right;
+}
+
+.whatsapp-float .whatsapp-menu p {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.whatsapp-float .whatsapp-menu a {
+    display: block;
+    margin-bottom: 5px;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover .whatsapp-menu {
+    display: block;
+}
+
+
 @media (max-width: 767.98px) {
     .body-ubi {
         background-size: cover;
-        /* Asegura que la imagen cubra toda la pantalla en móviles */
     }
 }
